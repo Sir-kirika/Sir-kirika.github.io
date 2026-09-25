@@ -20,13 +20,6 @@ Self-directed research applying Hidden Markov Models to detect volatility regime
 
 ---
 
-### Pine Script → MQL4/5 Conversion
-Translate TradingView Pine Script indicators and strategies into MQL4/5 for clients moving to MetaTrader, accounting for differences in execution model, bar timing, and built-in functions between the two platforms.
-
-**Stack:** MQL4/5, Pine Script
-
----
-
 ### Notepad Calculator
 Desktop note-taking app combining free-form notes with inline arithmetic — supports variable assignment and reuse within a note, light/dark themes, and undo/redo. Designed and coded solo, from UI down to the expression-parsing logic.
 
