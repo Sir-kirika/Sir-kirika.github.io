@@ -1,6 +1,6 @@
 ---
 title: "Building a Secure WebSocket Bridge for MetaTrader 5"
-date: 2026-09-25
+date: 2026-04-21
 categories:
   - projects
 tags:
