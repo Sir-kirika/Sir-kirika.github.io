@@ -7,6 +7,6 @@ I'm an Electrical and Electronics Engineering graduate with three-plus years of 
 
 Much of my recent work already brushes up against security fundamentals: building encrypted WebSocket (WSS) connections, managing SSL certificates, and implementing token-based authentication for live data bridges between MetaTrader 5 and web servers.
 
-My final-year engineering project was an anti-tampering smart meter system built to detect unauthorized access — an early sign of where my interests were heading. I'm now turning that instinct into formal cybersecurity skills through the Cyber Shujaa Data & AI track, bringing the same curiosity and quick-learning approach that's gotten me this far.
+My final-year engineering project was an anti-tampering smart meter system built to detect unauthorized access — an early sign of where my interests were heading. I'm now turning that instinct into formal cybersecurity skills through the Cyber Shujaa Cloud and Networking track, bringing the same curiosity and quick-learning approach that's gotten me this far.
 
 You can find my code on [GitHub](https://github.com/Sir-kirika){: .btn .btn--primary}, or check out the [Projects](/projects/) page for a closer look at what I've built.
