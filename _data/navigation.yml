@@ -3,7 +3,11 @@ main:
     url: /posts/
   - title: "Projects"
     url: /projects/
+  - title: "Lab Challenges"
+    url: /lab-challenges/
+  - title: "Resume"
+    url: /resume/
+  - title: "Contact"
+    url: /contact/
   - title: "About"
     url: /about/
-  - title: "Resume"
-    url: /assets/files/resume.pdf
