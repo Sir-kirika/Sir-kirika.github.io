@@ -1,27 +1,34 @@
-# Minimal Mistakes remote theme starter
+# jimkirika.github.io
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Personal portfolio and blog, built with [Jekyll](https://jekyllrb.com/) and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme, hosted on GitHub Pages.
 
-Contains basic configuration to get you a site with:
+I write about the intersection of my background in algorithmic trading development and my move into cybersecurity — secure data pipelines, WebSocket/TLS setups, and coursework from the [Cyber Shujaa](https://cybershujaa.co.ke/) Data & AI track.
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+**Live site:** https://sir-kirika.github.io *(update once deployed)*
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+## Structure
 
----
+```
+_config.yml     # site settings (title, author, nav, plugins)
+_pages/         # standalone pages — About, Projects
+_posts/         # blog posts
+index.html      # homepage (lists recent posts)
+```
 
-## Troubleshooting
+## Running locally
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+```bash
+bundle install
+bundle exec jekyll serve
+```
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+Site will be available at `http://localhost:4000`.
+
+## About me
+
+Electrical and Electronics Engineering graduate, three-plus years writing MQL4/5 trading software professionally, now building toward formal cybersecurity training. See the [About](https://sir-kirika.github.io/about/) page for the full story.
+
+## Contact
+
+- GitHub: [Sir-kirika](https://github.com/Sir-kirika)
+- Email: jkirika20@gmail.com
