@@ -46,7 +46,7 @@ Both beat the alternative of port-forwarding straight into a home router.
 
 ## What This Taught Me
 
-This project sits right at the edge of cybersecurity work without being labeled as such: certificate management, encrypted transport, token-based auth, and thinking through what an unauthenticated attacker on the same network could actually see. It's part of why I'm now pursuing formal training through the [Cyber Shujaa Data & AI track](/about/) — to turn instincts like "this needs a token" into a structured understanding of *why*, and what else I'm missing.
+This project sits right at the edge of cybersecurity work without being labeled as such: certificate management, encrypted transport, token-based auth, and thinking through what an unauthenticated attacker on the same network could actually see. It's part of why I'm now pursuing formal training through the [Cyber Shujaa Cloud and Networking](/about/) — to turn instincts like "this needs a token" into a structured understanding of *why*, and what else I'm missing.
 
 ---
 
