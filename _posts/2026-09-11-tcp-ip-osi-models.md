@@ -1,9 +1,16 @@
 ---
-permalink: /labs/tcp-ip-osi-models/
-title: "Investigating the TCP/IP and OSI Models in Packet Tracer"
-layout: single
-author_profile: true
+title: "Lab: Investigating the TCP/IP and OSI Models in Packet Tracer"
+date: 2026-09-11
+categories:
+  - labs
+tags:
+  - cybershujaa
+  - tcp-ip
+  - osi-model
+  - packet-tracer
 ---
+
+*Tracing a single HTTP request frame-by-frame through Packet Tracer's Simulation mode to watch encapsulation and de-encapsulation happen live.*
 
 **Problem Statement**
 Using Packet Tracer's Simulation mode, trace a single HTTP request end-to-end to observe encapsulation and de-encapsulation as it happens at each OSI/TCP-IP layer.
@@ -18,5 +25,3 @@ Cisco Packet Tracer (Simulation mode)
 Outbound and inbound views of the same event are mirror images — source/destination IPs, MACs, and ports all swap, and the Layer 7 description flips from "sending" to "receiving." DNS resolution happens before the HTTP request is ever sent. And while HTTP operates at Layer 7, it's entirely dependent on the layers beneath it — TCP for reliable delivery and connection state, IP for addressing, Ethernet for the physical hop — a dependency that's easy to state abstractly but much clearer once watched frame-by-frame.
 
 [Full lab writeup (PDF)](/assets/files/labs/tcp-ip-osi-models.pdf){: .btn .btn--primary}
-
-[← Back to all Lab Challenges](/lab-challenges/)

@@ -1,9 +1,16 @@
 ---
-permalink: /labs/wireshark-icmp-traffic/
-title: "Using Wireshark to Examine Network Traffic"
-layout: single
-author_profile: true
+title: "Lab: Using Wireshark to Examine Network Traffic"
+date: 2026-09-12
+categories:
+  - labs
+tags:
+  - cybershujaa
+  - wireshark
+  - icmp
+  - arp
 ---
+
+*Capturing local and remote ICMP traffic to see exactly when — and why — ARP resolves a MAC address, and when it doesn't.*
 
 **Problem Statement**
 Capture and analyze live ICMP traffic at both the local network level and across the internet, to observe how IP addresses get resolved to MAC addresses — and when that resolution does or doesn't happen.
@@ -18,5 +25,3 @@ Wireshark, Windows Command Prompt (`ping`), `ipconfig /all`
 MAC addresses are Layer 2 and only meaningful on the local segment. For local pings, the device ARPs for the target's MAC before any ICMP traffic flows. For remote pings, no ARP request is ever sent for the remote IP — the destination MAC in every remote capture was the local router's, not the remote server's — because the device just hands the frame to its default gateway once it determines the destination is off-subnet.
 
 [Full lab writeup (PDF)](/assets/files/labs/wireshark-icmp-traffic.pdf){: .btn .btn--primary}
-
-[← Back to all Lab Challenges](/lab-challenges/)

@@ -1,9 +1,16 @@
 ---
-permalink: /labs/htb-web-requests/
-title: "HTB Academy: Web Requests"
-layout: single
-author_profile: true
+title: "Lab: HTB Academy — Web Requests"
+date: 2026-09-28
+categories:
+  - labs
+tags:
+  - cybershujaa
+  - htb
+  - http
+  - rest-api
 ---
+
+*HTTP fundamentals, headers, Basic Auth, and full CRUD against a REST API — via cURL, DevTools, and the browser Console.*
 
 **Problem Statement**
 Work through HackTheBox Academy's "Web Requests" module — HTTP/HTTPS fundamentals, request and response headers, HTTP methods and status codes, Basic Authentication, and full CRUD operations against a REST API — using cURL, browser DevTools, and the browser Console.
@@ -18,5 +25,3 @@ cURL, browser DevTools (Network tab), browser Console (`fetch`), REST API testin
 Seeing the same request three ways — cURL, DevTools, and a Console `fetch` — surfaced different failure modes for each: shell quoting broke a JSON payload in cURL, while a page's Content-Security-Policy blocked a `fetch` call outright because the target was plain `http://` and the CSP only allowed HTTPS `connect-src`. Testing Basic Auth three different ways drove home how weak it really is on its own — the `Authorization` header is just base64-encoded `username:password`, not encryption, and can be replayed by anyone who captures it. The broader takeaway: HTTP is inherently plaintext and stateless, and everything that makes it safer in practice — HTTPS, secure cookies, CSP, real authentication — is something a server or browser has to deliberately add on top.
 
 [Full lab writeup (PDF)](/assets/files/labs/htb-web-requests.pdf){: .btn .btn--primary}
-
-[← Back to all Lab Challenges](/lab-challenges/)
