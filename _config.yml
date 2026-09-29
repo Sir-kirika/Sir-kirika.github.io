@@ -56,6 +56,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-seo-tag
   - jemoji
   - jekyll-include-cache
 
@@ -69,7 +70,7 @@ author:
     #   url: "https://"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/@jimkirika"
+    #   url: "https://twitter.com/jimkirika"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Sir-kirika"
@@ -81,7 +82,7 @@ footer:
   links:
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/@jimkirika"
+    #   url: "https://twitter.com/jimkirika"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Sir-kirika"
@@ -115,3 +116,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+url: "https://sir-kirika.github.io"
+logo: "/assets/images/og-image.png"
