@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   anti-tampering smart meter project to the Cyber Shujaa Cloud and Networking track.
 twitter_username: jimkirika
 github_username: Sir-kirika
-minimal_mistakes_skin: neon
+minimal_mistakes_skin: dark
 search: true
 
 # Build settings

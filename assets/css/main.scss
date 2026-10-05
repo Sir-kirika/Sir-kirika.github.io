@@ -2,74 +2,297 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dark' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
 /* ==========================================================================
-   Custom overrides — tighter typography, less whitespace
+   TradingView-inspired redesign
    ========================================================================== */
 
-/* Theme default scales the base font size up aggressively on wider
-   screens (16px -> 18px -> 19px -> 20px). Capping it keeps body text
-   from feeling oversized on a laptop/desktop. */
-html {
-  font-size: 15px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --tv-bg: #131722;
+  --tv-bg-elevated: #1e222d;
+  --tv-border: rgba(255, 255, 255, 0.08);
+  --tv-border-hover: rgba(41, 98, 255, 0.5);
+  --tv-text: #d1d4dc;
+  --tv-text-dim: #868993;
+  --tv-accent: #2962ff;
+  --tv-accent-hover: #1e53e5;
+  --tv-accent-soft: rgba(41, 98, 255, 0.12);
 }
 
-@media screen and (min-width: 600px) {
-  html {
-    font-size: 16px;
-  }
+html,
+body {
+  background-color: var(--tv-bg) !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
 
-@media screen and (min-width: 1024px) {
-  html {
-    font-size: 16px;
-  }
+code, pre, kbd {
+  font-family: 'JetBrains Mono', Monaco, Consolas, monospace !important;
 }
 
-@media screen and (min-width: 1280px) {
-  html {
-    font-size: 16px;
-  }
-}
+/* ---- Base typography tightening ---- */
+html { font-size: 15px; }
+@media screen and (min-width: 600px)  { html { font-size: 16px; } }
+@media screen and (min-width: 1024px) { html { font-size: 16px; } }
+@media screen and (min-width: 1280px) { html { font-size: 16px; } }
 
-/* Tighter paragraph rhythm inside post/page content */
 .page__content {
-  p, li {
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 0.9em;
+  p, li { font-size: 1em; line-height: 1.65; margin-bottom: 0.9em; color: var(--tv-text); }
+  h1, h2, h3, h4, h5, h6 { margin-top: 1.5em; margin-bottom: 0.5em; font-weight: 700; }
+  h2 { font-size: 1.45em; border-bottom: 1px solid var(--tv-border); padding-bottom: 0.3em; }
+  h3 { font-size: 1.15em; color: var(--tv-accent); }
+  strong { color: #fff; }
+  a { color: var(--tv-accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s ease; }
+  a:hover { border-bottom-color: var(--tv-accent); }
+}
+
+/* ==========================================================================
+   Masthead / nav — icon-led links
+   ========================================================================== */
+.masthead {
+  background-color: var(--tv-bg) !important;
+  border-bottom: 1px solid var(--tv-border) !important;
+}
+
+.greedy-nav {
+  background-color: var(--tv-bg) !important;
+
+  a {
+    color: var(--tv-text) !important;
+    font-weight: 500;
+    font-size: 0.95em;
+    padding: 0.5em 0.9em !important;
+    border-radius: 6px;
+    transition: background-color 0.15s ease, color 0.15s ease;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 1.4em;
-    margin-bottom: 0.5em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  h3 {
-    font-size: 1.2em;
+  a:hover {
+    background-color: var(--tv-accent-soft);
+    color: #fff !important;
   }
 }
 
-/* Archive / post-list excerpts (Posts, Lab Challenges index, etc.) */
+/* icon before each nav link, matched by href */
+.greedy-nav .visible-links li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+}
+
+.greedy-nav .visible-links li a::before {
+  font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", sans-serif;
+  font-weight: 900;
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+.greedy-nav .visible-links li a[href="/posts/"]::before          { content: "\f1ea"; } /* newspaper */
+.greedy-nav .visible-links li a[href="/projects/"]::before       { content: "\f542"; } /* diagram-project */
+.greedy-nav .visible-links li a[href="/lab-challenges/"]::before { content: "\f0c3"; } /* flask */
+.greedy-nav .visible-links li a[href="/resume/"]::before         { content: "\f15c"; } /* file-lines */
+.greedy-nav .visible-links li a[href="/contact/"]::before        { content: "\f0e0"; } /* envelope */
+.greedy-nav .visible-links li a[href="/about/"]::before          { content: "\f007"; } /* user */
+
+.site-title {
+  font-weight: 800 !important;
+  color: #fff !important;
+  letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
+   Sidebar / author profile — card styling
+   ========================================================================== */
+.sidebar {
+  background-color: var(--tv-bg-elevated);
+  border: 1px solid var(--tv-border);
+  border-radius: 12px;
+  padding: 1.5em !important;
+}
+
+.author__avatar img {
+  border-radius: 50%;
+  border: 2px solid var(--tv-accent);
+  padding: 2px;
+}
+
+.author__name { color: #fff !important; font-weight: 700; }
+.author__bio  { color: var(--tv-text-dim) !important; font-size: 0.85em; line-height: 1.6; }
+
+.author__urls {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 1em;
+
+  li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    background-color: var(--tv-bg);
+    border: 1px solid var(--tv-border);
+    color: var(--tv-text) !important;
+    padding: 0.4em 0.8em;
+    border-radius: 20px;
+    font-size: 0.82em;
+    font-weight: 500;
+    transition: border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  }
+
+  li a:hover {
+    border-color: var(--tv-accent);
+    color: #fff !important;
+    transform: translateY(-1px);
+  }
+}
+
+/* ==========================================================================
+   Post / archive list — cards
+   ========================================================================== */
+.archive__item {
+  background-color: var(--tv-bg-elevated);
+  border: 1px solid var(--tv-border);
+  border-radius: 10px;
+  padding: 1.3em 1.5em;
+  margin-bottom: 1em;
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.archive__item:hover {
+  border-color: var(--tv-border-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.archive__item-title {
+  margin-top: 0 !important;
+  font-weight: 700;
+
+  a {
+    color: #fff !important;
+    border-bottom: none !important;
+  }
+}
+
+.archive__item-title a:hover { color: var(--tv-accent) !important; }
+
 .archive__item-excerpt {
-  font-size: 0.85em;
-  line-height: 1.5;
+  color: var(--tv-text-dim) !important;
+  font-size: 0.88em;
+  line-height: 1.6;
 }
 
-/* Slightly tighter hero/title area so pages don't open with a big gap */
+.page__meta {
+  color: var(--tv-text-dim) !important;
+  font-size: 0.78em;
+}
+
+/* "Read more" affordance on hover */
+.archive__item::after {
+  content: "Read more →";
+  display: inline-block;
+  margin-top: 0.6em;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--tv-accent);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.archive__item:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ==========================================================================
+   Buttons — pill style, icon-aware
+   ========================================================================== */
+.btn {
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  font-size: 0.85em !important;
+  padding: 0.6em 1.3em !important;
+  border: none !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease !important;
+}
+
+.btn--primary {
+  background-color: var(--tv-accent) !important;
+  color: #fff !important;
+}
+
+.btn--primary:hover {
+  background-color: var(--tv-accent-hover) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(41, 98, 255, 0.35);
+}
+
+.btn::before {
+  font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", sans-serif;
+  font-weight: 900;
+  margin-right: 0.5em;
+}
+
+.btn[href$=".pdf"]::before      { content: "\f1c1"; } /* file-pdf */
+.btn[href*="github.com"]::before { content: "\f09b"; } /* github */
+
+/* ==========================================================================
+   Page title / hero
+   ========================================================================== */
 .page__title {
-  font-size: 1.6em;
-  margin-bottom: 0.3em;
+  font-size: 1.7em !important;
+  font-weight: 800 !important;
+  color: #fff !important;
+  margin-bottom: 0.3em !important;
+  position: relative;
+  padding-bottom: 0.4em;
 }
 
-/* Sidebar author bio can also run large on desktop */
-.author__bio {
+.page__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 3px;
+  background-color: var(--tv-accent);
+  border-radius: 2px;
+}
+
+/* ==========================================================================
+   Tags / categories — chips
+   ========================================================================== */
+.page__taxonomy-item, .taxonomy__index a {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--tv-accent-soft);
+  color: var(--tv-accent) !important;
+  border: 1px solid rgba(41, 98, 255, 0.3);
+  border-radius: 14px;
+  padding: 0.25em 0.75em;
   font-size: 0.8em;
-  line-height: 1.5;
+  font-weight: 600;
+  margin: 0.2em 0.3em 0.2em 0;
+  text-decoration: none !important;
+}
+
+/* ==========================================================================
+   Scrollbar polish
+   ========================================================================== */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--tv-bg); }
+::-webkit-scrollbar-thumb { background: #363a45; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--tv-accent); }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.page__footer {
+  border-top: 1px solid var(--tv-border) !important;
+  background-color: var(--tv-bg) !important;
 }
