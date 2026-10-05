@@ -118,4 +118,5 @@ tag_archive:
   path: /tags/
 
 url: "https://sir-kirika.github.io"
-logo: "/assets/images/og-image.png"
+logo: "/assets/images/logo.png"
+image: "/assets/images/og-image.png"
