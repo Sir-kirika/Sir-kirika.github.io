@@ -1,0 +1,75 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   Custom overrides — tighter typography, less whitespace
+   ========================================================================== */
+
+/* Theme default scales the base font size up aggressively on wider
+   screens (16px -> 18px -> 19px -> 20px). Capping it keeps body text
+   from feeling oversized on a laptop/desktop. */
+html {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Tighter paragraph rhythm inside post/page content */
+.page__content {
+  p, li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 0.9em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.4em;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+/* Archive / post-list excerpts (Posts, Lab Challenges index, etc.) */
+.archive__item-excerpt {
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+/* Slightly tighter hero/title area so pages don't open with a big gap */
+.page__title {
+  font-size: 1.6em;
+  margin-bottom: 0.3em;
+}
+
+/* Sidebar author bio can also run large on desktop */
+.author__bio {
+  font-size: 0.8em;
+  line-height: 1.5;
+}
