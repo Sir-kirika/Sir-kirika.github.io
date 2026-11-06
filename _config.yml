@@ -77,12 +77,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Sir-kirika"
-    - label: "Cyber Shujaa"
-      icon: "fab fa-fw fa-shield-alt"
-      url: "https://cybershujaa.co.ke"
-    - label: "MQL5"
-      icon: "fas fa-fw fa-chart-line"
-      url: "https://www.mql5.com/en/users/511841354"
 
 footer:
   links:
