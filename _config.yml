@@ -83,9 +83,6 @@ author:
     - label: "MQL5"
       icon: "fas fa-fw fa-chart-line"
       url: "https://www.mql5.com/en/users/511841354"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:jkirika20@gmail.com"
 
 footer:
   links:
@@ -104,9 +101,6 @@ footer:
     - label: "MQL5"
       icon: "fas fa-fw fa-chart-line"
       url: "https://www.mql5.com/en/users/511841354"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:jkirika20@gmail.com"
 
 defaults:
   # _posts
