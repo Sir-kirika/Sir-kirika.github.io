@@ -9,6 +9,9 @@ tags:
   - cloudtrail
   - athena
   - incident-response
+header:
+  og_image: /assets/images/labs/identify-iam-breaches-cloudtrail-athena.png
+  teaser: /assets/images/labs/identify-iam-breaches-cloudtrail-athena.png
 ---
 
 *Querying CloudTrail logs with SQL — through both the AWS Console and the CLI — to confirm a brute-force attack, size it, and identify which accounts were compromised.*

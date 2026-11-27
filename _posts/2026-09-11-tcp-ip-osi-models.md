@@ -8,6 +8,9 @@ tags:
   - tcp-ip
   - osi-model
   - packet-tracer
+header:
+  og_image: /assets/images/labs/tcp-ip-osi-models.png
+  teaser: /assets/images/labs/tcp-ip-osi-models.png
 ---
 
 *Tracing a single HTTP request frame-by-frame through Packet Tracer's Simulation mode to watch encapsulation and de-encapsulation happen live.*

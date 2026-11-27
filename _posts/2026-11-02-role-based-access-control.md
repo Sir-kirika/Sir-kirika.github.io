@@ -9,6 +9,9 @@ tags:
   - iam
   - rbac
   - pwned-labs
+header:
+  og_image: /assets/images/labs/role-based-access-control.png
+  teaser: /assets/images/labs/role-based-access-control.png
 ---
 
 *Tracing a full attack chain against a simulated company's AWS environment — from a hidden config file on a web server to an assumable IAM role protected by an External ID.*

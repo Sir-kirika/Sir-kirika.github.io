@@ -9,6 +9,9 @@ tags:
   - wireless
   - wpa2
   - radius
+header:
+  og_image: /assets/images/labs/packet-tracer-wlan-configuration.png
+  teaser: /assets/images/labs/packet-tracer-wlan-configuration.png
 ---
 
 *Configuring a home wireless router with WPA2-Personal, then an enterprise WLC network running both WPA2-PSK and WPA2-Enterprise with RADIUS authentication — side by side, to see the real difference.*

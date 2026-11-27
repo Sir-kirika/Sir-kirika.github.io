@@ -9,6 +9,9 @@ tags:
   - web-security
   - sql-injection
   - flask
+header:
+  og_image: /assets/images/labs/introduction-to-web-applications.png
+  teaser: /assets/images/labs/introduction-to-web-applications.png
 ---
 
 *Building a small Flask and SQLite app from scratch, then attacking it with curl, finding a SQL injection, and fixing it.*

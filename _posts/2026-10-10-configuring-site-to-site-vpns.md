@@ -8,6 +8,9 @@ tags:
   - cisco
   - ipsec
   - vpn
+header:
+  og_image: /assets/images/labs/configuring-site-to-site-vpns.png
+  teaser: /assets/images/labs/configuring-site-to-site-vpns.png
 ---
 
 *Building an IPsec tunnel between two routers and proving, from the packet counters, that only the traffic that matches the policy gets encrypted.*

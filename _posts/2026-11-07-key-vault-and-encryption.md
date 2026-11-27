@@ -9,6 +9,11 @@ tags:
   - key-vault
   - rbac
   - pwned-labs
+
+header:
+  og_image: /assets/images/labs/key-vault-and-encryption.png
+  teaser: /assets/images/labs/key-vault-and-encryption.png
+
 ---
 
 *Continuing from a compromised low-privilege Azure account, through a Key Vault storing plaintext contractor credentials, to read access on a table full of unencrypted payment data.*

@@ -9,6 +9,9 @@ tags:
   - kms
   - encryption
   - auditing
+header:
+  og_image: /assets/images/labs/kms-keys-with-finders-keypers.png
+  teaser: /assets/images/labs/kms-keys-with-finders-keypers.png
 ---
 
 *AWS has no built-in command that lists every resource a KMS key encrypts — so when a key is shared across services, finding its full "blast radius" before touching it takes dedicated tooling.*

@@ -8,6 +8,9 @@ tags:
   - cisco
   - routing
   - packet-tracer
+header:
+  og_image: /assets/images/labs/build-a-switch-and-router-network.png
+  teaser: /assets/images/labs/build-a-switch-and-router-network.png
 ---
 
 *Cabling and configuring a switch, router, and two PCs from scratch — IPv4/IPv6 addressing, encrypted passwords, and interface verification with Cisco IOS.*

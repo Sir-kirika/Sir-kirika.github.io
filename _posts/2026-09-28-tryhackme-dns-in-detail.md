@@ -7,6 +7,9 @@ tags:
   - cybershujaa
   - tryhackme
   - dns
+header:
+  og_image: /assets/images/labs/tryhackme-dns-in-detail.png
+  teaser: /assets/images/labs/tryhackme-dns-in-detail.png
 ---
 
 *Working through DNS record types, the resolution hierarchy, and live `nslookup` queries against a practice domain.*

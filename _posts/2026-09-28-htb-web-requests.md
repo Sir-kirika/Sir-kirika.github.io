@@ -8,6 +8,9 @@ tags:
   - htb
   - http
   - rest-api
+header:
+  og_image: /assets/images/labs/htb-web-requests.png
+  teaser: /assets/images/labs/htb-web-requests.png
 ---
 
 *HTTP fundamentals, headers, Basic Auth, and full CRUD against a REST API — via cURL, DevTools, and the browser Console.*

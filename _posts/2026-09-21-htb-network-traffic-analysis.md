@@ -9,6 +9,9 @@ tags:
   - tcpdump
   - wireshark
   - ftp
+header:
+  og_image: /assets/images/labs/htb-network-traffic-analysis.png
+  teaser: /assets/images/labs/htb-network-traffic-analysis.png
 ---
 
 *tcpdump and Wireshark from fundamentals to a live capture — extracting a file over FTP and recovering plaintext credentials from HTTP traffic.*

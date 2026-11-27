@@ -8,6 +8,9 @@ tags:
   - wireshark
   - icmp
   - arp
+header:
+  og_image: /assets/images/labs/wireshark-icmp-traffic.png
+  teaser: /assets/images/labs/wireshark-icmp-traffic.png
 ---
 
 *Capturing local and remote ICMP traffic to see exactly when — and why — ARP resolves a MAC address, and when it doesn't.*

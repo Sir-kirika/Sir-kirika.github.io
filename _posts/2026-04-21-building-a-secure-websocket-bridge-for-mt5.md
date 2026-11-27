@@ -8,6 +8,10 @@ tags:
   - ssl-tls
   - authentication
   - cybersecurity
+header:
+  image: /assets/images/labs/secure-websocket-bridge-metatrader-5.png
+  og_image: /assets/images/labs/secure-websocket-bridge-metatrader-5.png
+  teaser: /assets/images/labs/secure-websocket-bridge-metatrader-5.png
 ---
 
 Most MetaTrader 5 data bridges I've seen skip security entirely — plain WebSocket, no auth, whoever finds the port gets the feed. For a project streaming live trading data from MT5 to browser dashboards, that wasn't good enough. Here's how the pipeline is built, and the security decisions behind it.

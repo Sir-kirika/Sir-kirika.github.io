@@ -8,6 +8,9 @@ tags:
   - cisco
   - vlans
   - switch-security
+header:
+  og_image: /assets/images/labs/vlans-and-secure-switch-configuration.png
+  teaser: /assets/images/labs/vlans-and-secure-switch-configuration.png
 ---
 
 *Segmenting a switched network with VLANs and hardening it against the common Layer 2 attacks — rogue DHCP, trunk manipulation, and spanning-tree abuse.*
