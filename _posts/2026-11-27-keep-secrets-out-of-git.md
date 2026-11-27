@@ -9,6 +9,9 @@ tags:
   - git
   - secrets-management
   - labex
+header:
+  og_image: /assets/images/labs/role-based-access-control.png
+  teaser: /assets/images/labs/role-based-access-control.png
 ---
 
 *A credentials file was one `git commit` away from permanent history — caught not by a clever trick, but by checking the staging area before committing, the way any commit should be reviewed.*

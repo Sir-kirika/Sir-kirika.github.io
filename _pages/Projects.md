@@ -3,6 +3,25 @@ permalink: /projects/
 title: "Projects"
 layout: single
 author_profile: true
+feature_row:
+  - image_path: /assets/images/labs/identify-iam-breaches-cloudtrail-athena.png
+    alt: "Identifying IAM breaches with CloudTrail and Athena"
+    title: "IAM breach investigation"
+    url: /labs/identify-iam-breaches-cloudtrail-athena/
+    btn_label: "Read the write-up"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/labs/key-vault-and-encryption.png
+    alt: "Azure Key Vault privilege escalation chain"
+    title: "Azure privilege escalation"
+    url: /labs/key-vault-and-encryption/
+    btn_label: "Read the write-up"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/labs/kms-keys-with-finders-keypers.png
+    alt: "Auditing KMS key blast radius"
+    title: "KMS blast radius"
+    url: /labs/kms-keys-with-finders-keypers/
+    btn_label: "Read the write-up"
+    btn_class: "btn--primary"
 ---
 
 ### Secure MT5-to-Web Bridge
@@ -23,6 +42,9 @@ Built a small Flask and SQLite app, attacked it with cURL, found a SQL injection
 
 ### Cloud Security Labs (AWS and Azure)
 Hands-on investigations from the Cyber Shujaa Cloud and Network Security track:
+
+{% include feature_row %}
+
 - [Identifying IAM breaches with CloudTrail and Athena](/labs/identify-iam-breaches-cloudtrail-athena/): confirmed and sized a brute-force attack with SQL queries.
 - [Role-based access control attack chain](/labs/role-based-access-control/): traced an AWS attack from a hidden config file to an External ID-protected role.
 - [Key Vault and encryption](/labs/key-vault-and-encryption/): followed an Azure privilege-escalation chain to plaintext secrets and unencrypted data.
