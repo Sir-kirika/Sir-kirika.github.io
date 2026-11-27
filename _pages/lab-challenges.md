@@ -2,7 +2,7 @@
 permalink: /lab-challenges/
 title: "Lab Challenges"
 layout: single
-author_profile: false
+author_profile: true
 classes: wide
 ---
 
