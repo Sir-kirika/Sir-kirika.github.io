@@ -13,14 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: James kirika
+title: James Kirika
 email: jkirika20@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Electrical & Electronics Engineering graduate turned quant developer, now
-  building toward cybersecurity. Three-plus years writing MQL4/5 trading
-  software, with hands-on work in WSS encryption, SSL, and token-based auth
-  for live trading data bridges. This blog tracks that shift — from an
-  anti-tampering smart meter project to the Cyber Shujaa Cloud and Networking track.
+  Junior application and cloud security engineer in training. Electrical and
+  Electronics Engineering graduate with 3+ years of software development,
+  secure WSS/SSL data pipelines, and 15+ hands-on security labs from the
+  Cyber Shujaa Cloud and Network Security track.
 twitter_username: jimkirika
 github_username: Sir-kirika
 minimal_mistakes_skin: dark
@@ -63,7 +62,7 @@ plugins:
 author:
   name   : "James Kirika"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "EEE grad & quant dev moving into cybersecurity. Builds secure trading data bridges (WSS, SSL, token auth). Cyber Shujaa trainee."
+  bio    : "Application & cloud security | Cyber Shujaa trainee | Builds secure data pipelines."
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"

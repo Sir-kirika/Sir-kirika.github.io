@@ -3,10 +3,10 @@ permalink: /about/
 title: "About"
 ---
 
-I'm an Electrical and Electronics Engineering graduate with three-plus years of professional programming experience writing MQL4/5 trading software for MetaQuotes. I'm a fast, self-directed learner — I've picked up C++, C#, Python, and Node.js on the job and through personal projects, with no formal training in any of them beyond documentation and trial and error.
+I'm an Electrical and Electronics Engineering graduate and freelance software engineer with 3+ years of experience writing MQL4/MQL5 trading software for MetaTrader clients. I'm now focused on application, cloud and data security, and I'm a fast, self-directed learner: I picked up C++, C#, Python and Node.js on the job and through personal projects.
 
-Much of my recent work already brushes up against security fundamentals: building encrypted WebSocket (WSS) connections, managing SSL certificates, and implementing token-based authentication for live data bridges between MetaTrader 5 and web servers.
+My security work started in my own code. I build encrypted WebSocket (WSS) connections, manage SSL certificates, and implement token-based authentication for live data bridges between MetaTrader 5 and web servers. My final-year engineering project was an anti-tampering smart meter system built to detect unauthorised access.
 
-My final-year engineering project was an anti-tampering smart meter system built to detect unauthorized access — an early sign of where my interests were heading. I'm now turning that instinct into formal cybersecurity skills through the Cyber Shujaa Cloud and Networking track, bringing the same curiosity and quick-learning approach that's gotten me this far.
+I'm now formalising that experience through the Cyber Shujaa Cloud and Network Security track. I document every lab publicly, from AWS and Azure IAM investigations and KMS key audits to SQL injection remediation, VLAN hardening and IPsec VPNs. I'm looking for a junior application, cloud or data security role.
 
-You can find my code on [GitHub](https://github.com/Sir-kirika){: .btn .btn--primary}, or check out the [Projects](/projects/) page for a closer look at what I've built.
+You can find my code on [GitHub](https://github.com/Sir-kirika){: .btn .btn--primary}, read my [Lab Challenges](/lab-challenges/), or see the [Projects](/projects/) page for a closer look at what I've built.
