@@ -76,7 +76,10 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Sir-kirika"
-
+header:
+  og_image: /assets/images/labs/lab-iam-cloudtrail-athena.png
+  teaser: /assets/images/labs/lab-iam-cloudtrail-athena.png
+  
 footer:
   links:
     # - label: "Twitter"
